@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Read the number of rows (n) from the user
+read -p "Enter the number of rows: " n
+
+# Outer loop for rows from 1 to n
+for (( i=1; i<=n; i++ )); do
+    # Inner loop to print numbers from 1 to i in each row
+    for (( j=1; j<=i; j++ )); do
+        echo -n "$j "  # Print the current number followed by a space
+    done
+    echo  # Move to the next line after each row
+done
